@@ -1,13 +1,23 @@
-﻿{
-  "$schema": "http://json.schemastore.org/launchsettings.json",
+{
   "Jack.WebApi": {
     "commandName": "Project",
     "dotnetRunMessages": "true",
     "launchBrowser": true,
     "launchUrl": "/api/v1/home/CheckHealthy",
-    "applicationUrl": "http://localhost:5000",
+    "applicationUrl": "http://localhost:5050;https://localhost:5051",
     "environmentVariables": {
       "ASPNETCORE_ENVIRONMENT": "Development"
+    }
+  },
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "Jack.WebApi": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "publishAllPorts": true
     }
   }
 }
